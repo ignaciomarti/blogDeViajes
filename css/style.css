@@ -1,0 +1,286 @@
+/*
+COLORES
+HEADER #db008d;
+TITULOS Y ENTRADAS: #00b8e4;
+COPYRIGHT: #b10474;
+*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    display: block;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.7rem 0;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #00b8e4;
+}
+
+.center{
+    text-align: center;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    outline: none;
+}
+
+/* HEADER */
+
+.contenedor-imagen{
+    text-align: center;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #db008d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .contenedor-imagen{
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: 5rem;
+    }
+    
+    .navegacion-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #db008d;
+        padding-left: 5%;
+    }
+
+    .navegacion-desktop a{
+        color: white;
+        display: inline-block;
+        margin-top: 0px;
+        padding: 1.5rem 3rem;
+    }
+}
+
+.collapse{
+    background-color: #db008d;
+}
+
+.collapse a{
+    border: 1px solid #00b8e4;
+}
+
+/* MAIN */
+
+main{
+    margin: 5rem 5% 0;
+}
+
+@media (min-width: 768px){
+    main{
+        margin-right: 0;
+    }
+
+    .contenedor-descripcion-imagen{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        column-gap: 2rem;
+    }
+
+    .descripcion-imagen{
+        line-height: 2;
+        margin-top: 0;
+    }
+    
+    main img{
+        display: inline-block;
+    }
+
+    main p{
+        display: inline-block;
+        text-align: justify;
+    }
+}
+
+main article h2{
+    color: #00b8e4;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+main article p{
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+main article button{
+    background-color: #00b8e4;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+main article button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 131, 164);
+    transition: 1s;
+}
+
+/* OTROS POSTS */
+section{
+    margin: 3rem 5% 8rem;
+}
+
+@media (min-width: 768px){
+    section{
+        margin: 5rem 1rem 0px 0px;
+    }
+}
+
+section h2{
+    color: #00b8e4;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+section ul{
+    display: unset;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+section ul li{
+    color: #00b8e4;
+    text-align: left;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    padding-left: .5rem;
+}
+
+section ul li:hover{
+    color: white;
+}
+
+section ul a{
+    margin-top: 0;
+    padding: 0;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 0 5% 5rem;
+    background-color: #db008d;
+}
+
+.nosotros{
+    text-align: center;
+    color: white;
+    padding-top: 6rem;
+}
+
+footer h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.nosotros p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-size: 700;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer nav a{
+    display: inline;
+    margin-right: 2rem;
+    margin-top: 0;
+}
+
+footer nav a:last-child{
+    margin-right: 0;
+}
+
+footer nav a:hover{
+    color: white;
+    background-color: unset;
+}
+
+@media (min-width:768px){
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nosotros{
+        text-align: left;
+        width: 30rem;
+    }
+
+    .nosotros h2{
+        text-align: left;
+    }
+
+    .contenedor-navegacion{
+        padding-top: 6rem;
+        text-align: right;
+    }
+
+    .contenedor-navegacion h2{
+        text-align: right;
+    }
+
+    .contenedor-navegacion a{
+        font-size: 1.7rem;
+    }
+}
+
+.contenedor-derechos-reservados{
+    background-color: #b10474;
+    padding: 2rem 5%;
+}
+
+.contenedor-derechos-reservados p{
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
